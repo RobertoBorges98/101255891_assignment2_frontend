@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+body{
+  padding: 0;
+  margin: 0;
+  background-image: url(C:\Users\robby\Documents\Assignment2\101255891_assignment2_frontend\101255891_assignment2_frontend\src\images\image.jpg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#nav{
+  width: 100vw;
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 0px;
+  height: 75px;
+  background-color: #2c2c2c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#nav-title{
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav-button {
+  background-color: #2c2c2c; 
+  border: 3px;
+  border-radius: 25px;
   color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-button:hover{
+  background-color: rgb(111, 172, 111);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content{
+  text-align: center;
+  color:azure
+}
+
+.employee-list-table, .employee-list-table th, .employee-list-table td{
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  border: 1px solid lightgrey;
+  border-collapse: collapse;
+}
+
+.employee-list-table th, .employee-list-table td{
+  padding: 10px;
+}
+
+.employee-list-table tbody tr:nth-child(odd){
+  background: rgb(182, 195, 255);
+}
+
+.action-button{
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px;
+}
+
+.update-button{
+  background-color: lightseagreen;
+}
+
+.update-button:hover, .view-button:hover{
+  background-color: lightblue;
+}
+
+.delete-button{
+ background-color: rgb(129, 129, 129);
+}
+
+.delete-button:hover{
+  background-color: rgb(231, 12, 12);
+}
+
+.view-button{
+  background-color: lightseagreen;
+}
+
+#add-employee{
+  border-radius: 4px;
+  background-color: #2c2c2c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  float: left;
+  font-size: 18px;
+  margin: 25px 50px;
+}
+
+#add-employee:hover{
+  background-color: lightskyblue;
+}
+
+.employee-info{
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+}
+
+.caption{
+  font-weight: bold;
+}
+
+form{
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+}
+
+.save{
+  background-color: #4CAF50;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 8px 2px;
+}
+
+.save:hover{
+  background-color: lightgreen;
+}
+
+.cancel{
+  background-color: red;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 8px 2px;
+}
+
+.cancel:hover{
+  background-color: lightcoral;
+}
+
+input[type=text], input[type=email]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
 }
